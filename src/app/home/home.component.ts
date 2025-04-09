@@ -1,0 +1,19 @@
+import { Component } from '@angular/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
+import { faGears } from '@fortawesome/free-solid-svg-icons';
+import { faBellConcierge } from '@fortawesome/free-solid-svg-icons';
+import { faPieChart } from '@fortawesome/free-solid-svg-icons';
+
+@Component({
+  selector: 'app-home',
+  imports: [FontAwesomeModule],
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.css'
+})
+export class HomeComponent {
+  faWarning = faTriangleExclamation;
+  faCog = faGears
+  faAlert = faBellConcierge
+  faChart = faPieChart
+}
