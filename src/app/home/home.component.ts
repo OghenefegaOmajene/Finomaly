@@ -5,6 +5,15 @@ import { faGears } from '@fortawesome/free-solid-svg-icons';
 import { faBellConcierge } from '@fortawesome/free-solid-svg-icons';
 import { faPieChart } from '@fortawesome/free-solid-svg-icons';
 
+import { faMicrochip } from '@fortawesome/free-solid-svg-icons';
+import { faLock } from '@fortawesome/free-solid-svg-icons';
+import { faUserCheck } from '@fortawesome/free-solid-svg-icons';
+import { faCloud } from '@fortawesome/free-solid-svg-icons';
+
+import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
+import { faQuoteRight } from '@fortawesome/free-solid-svg-icons';
+
+// import { faFacebookF, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 @Component({
   selector: 'app-home',
   imports: [FontAwesomeModule],
@@ -16,4 +25,10 @@ export class HomeComponent {
   faCog = faGears
   faAlert = faBellConcierge
   faChart = faPieChart
+  faAI = faMicrochip
+  faLock = faLock
+  faUser = faUserCheck
+  faScale = faCloud
+  faQuoteLeft = faQuoteLeft
+  faQuoteRight = faQuoteRight
 }

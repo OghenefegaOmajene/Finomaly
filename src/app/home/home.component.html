@@ -1,6 +1,10 @@
-<section class="heroBanner">
+<section class="heroBanner" id="home">
     <div id="heroTxt">
-      <h1>"Empower Your Financial Security with <span class="nameSpan">AI-Driven</span> Anomaly Detection"</h1>
+      <h1>
+        <fa-icon [icon]="faQuoteLeft" class="quote" style="color: #FF318E"></fa-icon>
+        Empower Your Financial Security with <span class="nameSpan">AI-Driven</span> Anomaly Detection
+        <fa-icon [icon]="faQuoteRight" class="quote" style="color: #FF318E"></fa-icon>
+      </h1>
       <p>Detect fraudulent activity and financial anomalies in real-time, ensuring secure transactions for your business & accounts.</p>
         <button class="getStarted"><b>Get Started</b></button>
     </div>
@@ -20,7 +24,7 @@
         </div>
 
         <div>
-            <fa-icon [icon]="faAlert" style="color: #eacb1b;"></fa-icon>
+            <fa-icon [icon]="faAlert" style="color: #d8b800;"></fa-icon>
             <h3>Customizable Alerts</h3>
             <p>Set thresholds and receive notifications on potential fraud.</p>
         </div>
@@ -39,6 +43,8 @@
     </div>
     
 </section>
+
+<section id="howItWorks"></section>
 
 <section class="howItWorks">
     <div class="howItWorksHead">
@@ -87,4 +93,32 @@
         </div>
     </div>
     
+</section>
+
+<section id="whyUs"></section>
+
+<section class="whyUs">
+    <h1 class="sectionHeads">Why ZaiganAI?</h1>
+
+    <div class="whyUsBody">
+        <div>
+            <fa-icon [icon]="faAI" style="color: #FF318E;"></fa-icon>
+            <h3>AI Powered</h3>
+        </div>
+
+        <div>
+            <fa-icon [icon]="faScale" style="color: #FF318E;"></fa-icon>
+            <h3>Scalable</h3>
+        </div>
+
+        <div>
+            <fa-icon [icon]="faLock" style="color: #FF318E;"></fa-icon>
+            <h3>Secure</h3>
+        </div>
+
+        <div>
+            <fa-icon [icon]="faUser" style="color: #FF318E;"></fa-icon>
+            <h3>User Friendly</h3>
+        </div>
+    </div>
 </section>

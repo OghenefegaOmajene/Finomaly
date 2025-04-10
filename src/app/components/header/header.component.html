@@ -4,15 +4,34 @@
     </div>
 
     <div class="navLinks">
-        <p>Home</p>
-        <p>How it works</p>
-        <p>Why Us?</p>
-        <p>Reviews</p>
-        <p>Pricing</p>
+        <a routerLink="/home" fragment="home">Home</a>
+        <a routerLink="/home" fragment="howItWorks">How It Works</a>
+        <a routerLink="/home" fragment="whyUs">Why Us?</a>
+        <a routerLink="/home" fragment="reviews">Reviews</a>
+        <a routerLink="/home" fragment="pricing">Pricing</a>
     </div>
 
-    <div class="user">
-        <button class="logInBtn">Log In</button>
-        <!-- <img src="../../../images/rabbitgirl.jpg" alt=""> -->
+    <div class="user" (mouseenter)="onHoverEnter()" (mouseleave)="onHoverLeave()">
+        <!-- <button class="logInBtn">Log In</button> -->
+        <img src="coolChibi.jpg" alt="" class="userImg">
+        <div *ngIf="isHovering" class="hoverBox">
+        
+            <h4 style="color: #FF318E">My Account</h4>
+            <p style="color: #969696">{{email}}</p>
+
+            <div class="acctControls">
+                <button class="acctType">Personal</button>
+                <a routerLink="/dashboard" class="acctLinks">
+                    <fa-icon [icon]="faChart" style="color: #FF318E"></fa-icon>
+                    Dashboard
+                </a>
+                <!-- <p> <fa-icon [icon]="faChart" style="color: #FF318E"></fa-icon>Dashboard</p> -->
+                <p class="acctLinks"> 
+                    <fa-icon [icon]="faLogOut" style="color: #FF318E"></fa-icon>
+                    Log out
+                </p>
+            </div>
+            
+        </div>
     </div>
 </nav>

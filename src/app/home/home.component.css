@@ -4,14 +4,16 @@
     /* background-size: cover;
     background-position: center; */
     width: 100%;
-    height: 500px;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding-top: 30px;
     /* text-align: center; */
     /* background-color: rgba(0, 0, 0, 0.461); */
     background-blend-mode: darken;
     margin-bottom: 70px;
+    /* margin-top: 80px; */
 
 }
 .nameSpan{
@@ -50,7 +52,6 @@
     }
 }
 .getStarted:hover{
-    transform: scale(0.95);
     background-color: transparent;
     color: black;
     border: 3px solid #FF318E;
@@ -122,9 +123,11 @@
     border-bottom: 5px solid #FF318E;
 }
 fa-icon{
-    font-size: 40px;
+    font-size: 30px;
 }
-
+.quote{
+    font-size: 20px;
+}
 
 
 
@@ -138,6 +141,7 @@ fa-icon{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    /* background-color: brown; */
     /* border: 1px solid rgb(243, 0, 0); */
 }
 .howItWorksHead{
@@ -214,4 +218,50 @@ fa-icon{
     width: 100%;
     height: 100%;
     border-radius: 30px;
+}
+
+
+
+/* WHY ZAIGAN */
+.whyUs{
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.whyUs h1{
+    color: black;
+}
+.whyUsBody{
+    width: 80%;
+    /* border: 1px solid black; */
+    height: 70%;
+    display: flex;
+    gap: 10%;
+}
+.whyUsBody div{
+    width: 26%;
+    /* height: 100%; */
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    /* box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.221); */
+    /* background-color: rgb(217, 217, 217); */
+}
+.whyUsBody div:hover{
+    border-bottom: 5px solid #FF318E;
+}
+
+
+#howItWorks, #whyUs{
+    height: 100px;
+    width: 100%;
 }
