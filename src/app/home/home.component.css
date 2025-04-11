@@ -29,11 +29,10 @@
     }
 }
 .getStarted{
-    background-color: black;
-    color: #FF318E;
+    background-color: transparent;
+    color: black;
+    border: 3px solid #FF318E;
     padding: 15px;
-    /* border-radius: 30px; */
-    border: 0;
     /* height: 50px; */
     width: 200px;
     animation: pulse 2s linear infinite;
@@ -51,12 +50,11 @@
         transform: scale(1);
     }
 }
-.getStarted:hover{
+/* .getStarted:hover{
     background-color: transparent;
     color: black;
-    border: 3px solid #FF318E;
     transition: 1s;
-}
+} */
 #heroTxt{
     /* border: 1px solid black; */
     width: 40%;
@@ -116,6 +114,7 @@
     align-items: center;
     justify-content: space-around;
     border-radius: 10px;
+    /* border: 1px solid black; */
     /* box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.221); */
     /* background-color: rgb(217, 217, 217); */
 }
@@ -264,4 +263,98 @@ fa-icon{
 #howItWorks, #whyUs{
     height: 100px;
     width: 100%;
+}
+
+@media screen and (max-width: 1080px) {
+    .heroBanner{
+        /* border: 1px solid black; */
+        height: 500px;
+        /* background-color: rgba(0, 0, 0, 0.29); */
+    }
+    #heroTxt h1{
+        font-size: 30px;
+    }
+    .aiImg{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+    .keyFeatures{
+        width: 100%;
+        /* border: 1px solid black; */
+    }
+    .keyFeaturesBody{
+        width: 95%;
+        /* border: 1px solid black; */
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .heroBanner{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: centere;
+        /* background-color: rgba(0, 0, 0, 0.29); */
+        justify-content: space-evenly;
+        background-image: url('../../../public/ai.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.507);
+        background-blend-mode: darken;
+    }
+    .nameSpan{
+        background-image: linear-gradient(to right, #ff4378, #be64ff);
+        background-size: 200% auto;
+        animation: gradientAnimation 5s linear infinite;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    #heroTxt{
+        border: 1px solid black;
+        width: 50%;
+        height: 300px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    #heroTxt h1{
+        font-size: 30px;
+        color: white;
+        /* border: 1px solid black; */
+    }
+    #heroTxt p{
+        color: white;
+    }
+    .aiImg{
+        height: 300px;
+        width: 60%;
+        display: none;
+    }
+    .getStarted{
+        color: white;
+    }
+    .keyFeatures{
+        /* background-color: #ff4378; */
+        height: 450px;
+    }
+    .keyFeaturesBody{
+        display: flex;
+        /* border: 1px solid black; */
+        flex-wrap: wrap;
+    }
+    .keyFeaturesBody div{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 598px) {
+    #heroTxt{
+        width: 70%;
+    }
 }

@@ -1,3 +1,43 @@
-<section class="totalThreats">
+<div class="dashboard" [class.collapsed]="isCollapsed">
+    <app-sidenav [isCollapsed]="isCollapsed"></app-sidenav>
+  
+    <section class="dashboardContentBox">
+      <app-sidenavheader (toggle)="toggleSidenav()"></app-sidenavheader>
+  
+        <section class="dashboardContent">
+            <div class="totalTransactions">
+                <i class="bi bi-bank2" style="color: #6221f3; background-color: #6221f31c"></i>
+                <p>Total Transactions (Today)</p>
+                <p>1,200</p>
+            </div>
 
-</section>
+            <div class="anomalyOverview">
+                <h3>Anomaly Overview (Today)</h3>
+                <div class="anomalyOverviewBox">
+                    <div class="moderateAnomalies">
+                        <i class="bi bi-exclamation-triangle-fill" style="color: orangered; background-color: #ffd2cf"></i>
+                        <p>Moderate Anomalies</p>
+                        <p>12</p>
+                    </div>
+                    <div class="criticalAnomalies">
+                        <i class="bi bi-shield-fill-exclamation" style="color: crimson; background-color: rgb(255, 211, 220);"></i>
+                        <p>Critical Anomalies</p>
+                        <p>5</p>
+                    </div>
+                    <button>Get More Insight</button>
+                </div>
+                
+            </div>
+
+            <div class="anomalyDetectionRate">
+
+            </div>
+            <div class="monthlyTransactionsOverview">
+                <h3>Monthly Transactions Overview</h3>
+            </div>
+            <div class="riskScoreOverview">
+
+            </div>
+        </section>
+    </section>
+</div>

@@ -1,1 +1,25 @@
-<p>sidenav works!</p>
+<section class="sideNav" [class.collapsed]="isCollapsed">
+    <div class="sideNavLogoBox">
+        <img src="zaiganTxt.png" alt="ZaiganAI" class="sideNavLogo">
+    </div>
+    
+    <div class="sideNavLinks">
+        <a class="nav-item" *ngFor="let item of navItems">
+          <a class="sideNavLink" [routerLink]="item.link" routerLinkActive="active">
+            <i class="bi" [ngClass]="item.icon"></i>
+            <span *ngIf="!isCollapsed">{{ item.label }}</span>
+          </a>
+        </a>
+    </div>
+
+    <div class="sideNavLogOut">
+        <img src="coolChibi.jpg" alt="">
+
+        <div class="briefSideNavUserInfo">
+            <p>Hayley Chibi</p>
+            <p>Personal</p>
+        </div>
+
+        <i class="bi bi-box-arrow-right"></i>
+    </div>
+</section>

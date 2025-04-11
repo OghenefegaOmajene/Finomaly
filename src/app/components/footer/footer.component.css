@@ -1,7 +1,7 @@
 .footer{
     width: 100%;
     height: 250px;
-    border-top:  3px solid #FF318E;
+    /* border-top:  3px solid #FF318E; */
     padding-top: 30px;
     /* border: 1px solid black; */
     color: black;
@@ -10,9 +10,9 @@
     align-items: center;
 }
 .footerLogo{
-    width: 96%;
+    width: 90%;
     height: 10%;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     display: flex;
     /* justify-content: space-around; */
 }
@@ -26,14 +26,14 @@
 .midFooter{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
     height: 70%;
 }
 .footerLinks{
     width: 20%;
     height: 60%;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -48,9 +48,9 @@
 }
 
 .newsletter{
-    width: 30%;
+    width: 40%;
     height: 60%;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -58,12 +58,14 @@
 .newsLetterInput{
     width: 100%;
     height: 40%;
-    /* border: 1px solid black; */
+    border: 2px solid rgb(255, 0, 0);
+    display: flex;
+    justify-content: center;
 }
 .newsLetterInput input{
     border: 1px solid black;
     outline: 0;
-    width: 67%;
+    width: 60%;
     height: 100%;
     padding-left: 10px;
 }
@@ -78,10 +80,22 @@
 .socials{
     width: 30%;
     height: 60%;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.socialIcons{
+    width: 100%;
+    height: 80%;
+    /* align-items: center; */
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+    /* border: 1px solid black; */
+}
+.socialIcons i{
+    font-size: 20px;
 }
 
 
@@ -95,3 +109,39 @@
 }
 
 
+@media screen and (max-width: 1080px) {
+    .footer{
+        border: 1px solid black;
+    }
+}
+@media screen and (max-width: 865px) {
+    .newsletter{
+        border: 1px solid black;
+    }
+}
+@media screen and (max-width: 860px) {
+    .footer{
+        height: 300px;
+    }
+}
+@media screen and (max-width: 682px) {
+    .footer{
+        height: 600px;
+    }
+    .midFooter{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerLinks, .newsletter{
+        border: 1px solid black;
+        width: 90%;
+    }
+    .socials{
+        text-align: center;
+        border: 1px solid black;
+        width: 90%;
+    }
+    .socialIcons{
+        justify-content: center;
+    }
+}

@@ -1,5 +1,176 @@
-.totalThreats{
+
+.dashboard {
+    display: flex;
     width: 100%;
-    height: 800px;
-    background-color: rgb(0, 0, 0);
+    height: 120vh;
+    transition: all 0.3s ease;
+    /* justify-content: center; */
+}
+/*  
+  .dashboardContent {
+    width: 75%;
+    flex-grow: 1;
+    transition: all 0.3s ease;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.957);
+    overflow: auto;
+  }
+  
+
+  .dashboard.collapsed .dashboardContent {
+    padding-left: 2rem;
+  } */
+.dashboardContentBox{
+    /* width: 85%; */
+    flex-grow: 1;
+    height: 95%;
+    overflow-y: hidden;
+    background-color: #ffffff;
+    /* right: 0px; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 30px;
+}
+.dashboardContent{
+    width: 90%;
+    height: 100%;
+    background-color: transparent;
+    /* background-color: rgba(255, 255, 255, 0.957); */
+    /* border: 1px solid black; */
+    /* right: 0px; */
+    display: grid;
+    /* gap: 40px; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    align-self: center;
+    /* align-items: center; */
+    /* padding: 3rem; */
+    /* left: 15%; */
+}
+/* 
+.totalTransactions:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-20deg, #ce50a0 0%, #ff318e 100% );
+    transform: translate3d(0px, 2px, 0) scale(1.07);
+    filter: blur(21px);
+    opacity: var(0.34);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+}
+.totalTransactions::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+} */
+.totalTransactions{
+    grid-area: 1 / 1 / 3 / 3;
+    background-color: white;
+    color: #838383;
+    box-shadow: 0px 0px 2px 1px #dadada;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-evenly;
+    padding: 10px;
+    /* height: 80%; */
+}     
+.anomalyOverview{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: 1 / 3 / 3 / 7;
+    box-shadow: 0px 0px 2px 1px #dadada;
+    padding: 10px;
+    /* height: 80%; */
+} 
+.moderateAnomalies{
+    /* border: 1px solid black; */
+    background-color: white;
+    /* box-shadow: 0px 0px 2px 1px #ff89be; */
+    color: #838383;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.criticalAnomalies{
+    /* grid-area: 1 / 5 / 3 / 7; */
+    background-color: white;
+    /* border: 1px solid black; */
+    /* box-shadow: 0px 0px 2px 1px #ff89be; */
+    color: #838383;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.riskScoreOverview{
+    grid-area: 3 / 1 / 9 / 4;
+    background-color: white;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 2px 1px #dadada;
+    padding: 10px;
+}
+.monthlyTransactionsOverview{
+    grid-area: 3 / 4 / 6 / 7;
+    /* border: 1px solid black; */
+    background-color: white;
+    box-shadow: 0px 0px 2px 1px #dadada;
+    padding: 10px;
+}
+.anomalyDetectionRate{
+    grid-area: 6 / 4 / 9 / 7;
+    /* border: 1px solid black; */
+    background-color: white;
+    box-shadow: 0px 0px 2px 1px #dadada;
+    padding: 10px;
+}
+.bi-bank2, .bi-exclamation-triangle-fill, .bi-shield-fill-exclamation{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.anomalyOverview h3, .monthlyTransactionsOverview h3{
+    color: black;
+}
+
+
+/* ANOMALY OVERVIEW */
+.anomalyOverviewBox{
+    width: 100%;
+    /* border: 1px solid black; */
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.anomalyOverviewBox button{
+    width: 100px;
+    height: 60%;
+    background-color: #FF318E;
+    border: 0;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
 }
