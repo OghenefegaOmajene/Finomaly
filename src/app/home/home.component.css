@@ -86,7 +86,7 @@
 }
 .keyFeatures{
     width: 100%;
-    height: 300px;
+    height: 220px;
     /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
@@ -102,17 +102,18 @@
     /* border: 1px solid black; */
     height: 80%;
     display: flex;
-    gap: 10%;
+    gap: 5%;
 }
 .keyFeaturesBody div{
-    width: 26%;
-    /* height: 100%; */
+    width: 25%;
+    height: 100%;
     color: black;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    gap: 10px;
+    justify-content: center;
     border-radius: 10px;
     /* border: 1px solid black; */
     /* box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.221); */
@@ -135,7 +136,7 @@ fa-icon{
 /* HOW IT WORKS */
 .howItWorks{
     width: 100%;
-    height: 1200px;
+    height: 1120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,7 +147,7 @@ fa-icon{
 }
 .howItWorksHead{
     /* border: 1px solid black; */
-    height: 50px;
+    height: 40px;
     display: flex;
     align-items: center;
 }
@@ -161,7 +162,7 @@ fa-icon{
 }
 .steps{
     width: 70%;
-    height: 90%;
+    height: 95%;
     /* background-color: #ff318e69; */
     display: flex;
     flex-direction: column;
@@ -264,6 +265,7 @@ fa-icon{
 #howItWorks, #whyUs{
     height: 100px;
     width: 100%;
+    /* background-color: black; */
 }
 
 @media screen and (max-width: 1080px) {
@@ -277,6 +279,12 @@ fa-icon{
     }
     .aiImg{
         height: 300px;
+    }
+    .keyFeaturesBody div h3{
+        font-size: 15px;
+    }
+    .keyFeaturesBody div p{
+        font-size: 14px;
     }
 }
 
@@ -293,16 +301,33 @@ fa-icon{
     }
 }
 
-@media screen and (max-width: 1075px) {
+@media screen and (max-width: 971px) {
     .keyFeatures{
+        /* background-color: rgba(0, 0, 255, 0.237); */
+        height: 400px;
+    }
+    .keyFeaturesBody{
+        /* border: 1px solid black; */
+        width: 400px;
+    }
+    .keyFeaturesBody div{
         width: 100%;
         /* border: 1px solid black; */
     }
-    .keyFeaturesBody{
-        width: 95%;
-        /* border: 1px solid black; */
-        gap: 20px;
+    .keyFeaturesBody div h3{
+        font-size: 15px;
     }
+    .keyFeaturesBody div p{
+        font-size: 14px;
+    }
+    .keyFeaturesBody{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        /* align-items: center; */
+    }
+
 }
 
 @media screen and (max-width: 845px) {
@@ -315,13 +340,22 @@ fa-icon{
     } */
     .step1, .step2{
         display: flex;
-        flex-direction: column;
         height: 500px;
+        align-items: center;
     }
-    .step1Txt, .step2Txt, .step1Img, .step2Img{
+    .step1{
+        flex-direction: column;
+    }
+    .step2{
+        flex-direction: column-reverse;
+    }
+    .step1Txt, .step2Txt{
         /* border: 1px solid black; */
         width: 100%;
-
+    }
+    .step1Img, .step2Img{
+        /* border: 1px solid black; */
+        width: 100%;
     }
     .step1Img, .step2Img{
         display: flex;
@@ -329,7 +363,7 @@ fa-icon{
         justify-content: center;
     }
     .step1Img img, .step2Img img{
-        width: 50%;
+        width: 300px;
         height: 90%;
     }
 }
@@ -398,18 +432,7 @@ fa-icon{
     .getStarted{
         color: white;
     }
-    .keyFeatures{
-        /* background-color: #ff4378; */
-        height: 450px;
-    }
-    .keyFeaturesBody{
-        display: flex;
-        /* border: 1px solid black; */
-        flex-wrap: wrap;
-    }
-    .keyFeaturesBody div{
-        width: 30%;
-    }
+    
 }
 
 @media screen and (max-width: 666px) {
@@ -436,7 +459,86 @@ fa-icon{
 @media screen and (max-width: 598px) {
     #heroTxt{
         width: 70%;
+        /* border: 1px solid white; */
+    }   
+    /* .steps{
+        background-color: #ff4378;
+    } */
+}
+
+@media screen and (max-width: 523px) {
+    .keyFeaturesBody{
+        /* border: 1px solid black; */
+        width: 200px;
+        height: 90%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        justify-content: center;
+        gap: 0;
     }
-    
-    
+    .keyFeaturesBody div{
+        width: 100%;
+        height: 150px;
+        /* border: 1px solid black; */
+        /* align-self: center; */
+    }
+    .keyFeaturesBody div h3{
+        font-size: 15px;
+    }
+    .keyFeaturesBody div p{
+        font-size: 14px;
+    }
+    .keyFeatures{
+        /* background-color: #7F40AC; */
+        height: 720px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 495px) {
+    .steps{
+        /* background-color: #ff4378; */
+        /* height: fit-content; */
+    }
+    .step1Txt p, .step2Txt p{
+        font-size: 14px;
+    }
+    /* .howItWorks{
+        margin-bottom: 100px;
+    } */
+    .whyUs{
+        /* border: 1px solid black; */
+    }   
+}
+@media screen and (max-width: 432px) {
+    #heroTxt{
+        width: 90%;
+    }   
+}
+@media screen and (max-width: 410px) {
+    .howItWorks{
+        height: 1500px;
+    }
+}
+@media screen and (max-width: 400px) {
+    #heroTxt h1{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 394px) {
+    /* .howItWorks{
+        height: 1500px;
+    } */
+     .step1Img img, .step2Img img{
+        width: 250px;
+        height: 80%;
+     }
+}
+@media screen and (max-width: 340px) {
+    #heroTxt{
+        width: 100%;
+    }   
 }
