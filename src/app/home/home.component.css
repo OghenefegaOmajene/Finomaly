@@ -74,7 +74,8 @@
 }
 .quotes{
     font-size: 20px;
-    position: absolute;
+    top: -15px;
+    position: relative;
     /* border: 1px solid black; */
     /* z-index: 10000; */
     color: #F3265F;
