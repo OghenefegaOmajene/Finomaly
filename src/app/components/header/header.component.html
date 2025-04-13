@@ -3,17 +3,29 @@
         <img src="zaiganTxt.png" alt="">
     </div>
 
-    <div class="navLinks">
+    <div class="navLinks" [class.active]="menuToggle">
         <a routerLink="/home" fragment="home">Home</a>
         <a routerLink="/home" fragment="howItWorks">How It Works</a>
         <a routerLink="/home" fragment="whyUs">Why Us?</a>
         <a routerLink="/home" fragment="reviews">Reviews</a>
         <a routerLink="/home" fragment="pricing">Pricing</a>
-    </div>
 
-    <div class="user" (mouseenter)="onHoverEnter()" (mouseleave)="onHoverLeave()">
         <!-- <button class="logInBtn">Log In</button> -->
-        <img src="coolChibi.jpg" alt="" class="userImg">
+    </div>
+      
+    <!-- <div class="menu-toggle" (click)="toggleMenu()">
+        <input type="checkbox" id="checkbox" [checked]="menuToggle" readonly />
+        <label for="checkbox" class="toggle">
+          <div class="bars" id="bar1"></div>
+          <div class="bars" id="bar2"></div>
+          <div class="bars" id="bar3"></div>
+        </label>
+    </div> -->
+
+    <div class="user">
+    
+        <i class="bi bi-person" (mouseenter)="onHoverEnter()" (mouseleave)="onHoverLeave()"></i>
+        <!-- <img src="coolChibi.jpg" alt="" class="userImg"> -->
         <div *ngIf="isHovering" class="hoverBox">
         
             <h4 style="color: #FF318E">My Account</h4>
@@ -33,6 +45,14 @@
                 </p>
             </div>
             
+        </div>
+
+        <div class="menu-toggle" (click)="toggleMenu()">
+            <div class="toggle" [ngClass]="{ 'open': menuToggle }">
+              <div class="bars" id="bar1"></div>
+              <div class="bars" id="bar2"></div>
+              <div class="bars" id="bar3"></div>
+            </div>
         </div>
     </div>
 </nav>

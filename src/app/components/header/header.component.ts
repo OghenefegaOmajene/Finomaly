@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, ElementRef } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faDashboard } from '@fortawesome/free-solid-svg-icons';
@@ -17,6 +17,9 @@ import { faExternalLink } from '@fortawesome/free-solid-svg-icons';
 export class HeaderComponent {
   isScrolled = false;
   isHovering = false;
+  menuToggle = false;
+
+  constructor(private eRef: ElementRef) {}
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -35,4 +38,22 @@ export class HeaderComponent {
 
   faChart = faDashboard
   faLogOut = faExternalLink
+
+
+  @HostListener('document:click', ['$event'])
+  handleClickOutside(event: Event) {
+    const target = event.target as HTMLElement;
+
+    if (
+      this.menuToggle &&
+      !this.eRef.nativeElement.querySelector('.menu-toggle')?.contains(target) &&
+      !this.eRef.nativeElement.querySelector('.navLinks')?.contains(target)
+    ) {
+      this.menuToggle = false;
+    }
+  }
+
+  toggleMenu() {
+    this.menuToggle = !this.menuToggle;
+  }
 }
