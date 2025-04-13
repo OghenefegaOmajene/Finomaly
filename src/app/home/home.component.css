@@ -427,7 +427,7 @@ fa-icon{
         -webkit-background-clip: text;
     }
     #heroTxt{
-        /* border: 1px solid black; */
+        /* border: 1px solid white; */
         width: 50%;
         height: 300px;
         text-align: center;
@@ -481,13 +481,11 @@ fa-icon{
 
 @media screen and (max-width: 598px) {
     #heroTxt{
-        width: 70%;
+        width: 400px;
         /* border: 1px solid white; */
     }   
-    /* .steps{
-        background-color: #ff4378;
-    } */
 }
+
 
 @media screen and (max-width: 523px) {
     .keyFeaturesBody{
@@ -536,21 +534,19 @@ fa-icon{
         /* border: 1px solid black; */
     }   
 }
-@media screen and (max-width: 432px) {
+
+@media screen and (max-width: 426px) {
     #heroTxt{
-        width: 90%;
-    }   
+        width: 300px;
+    }
 }
+
 @media screen and (max-width: 410px) {
     .howItWorks{
         height: 1500px;
     }
 }
-@media screen and (max-width: 400px) {
-    #heroTxt h1{
-        font-size: 28px;
-    }
-}
+
 @media screen and (max-width: 394px) {
     /* .howItWorks{
         height: 1500px;
