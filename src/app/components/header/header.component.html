@@ -24,10 +24,9 @@
 
     <div class="user">
     
-        <i class="bi bi-person" (mouseenter)="onHoverEnter()" (mouseleave)="onHoverLeave()"></i>
+        <i class="bi bi-person" (click)="toggleHoverBox()"></i>
         <!-- <img src="coolChibi.jpg" alt="" class="userImg"> -->
-        <div *ngIf="isHovering" class="hoverBox">
-        
+        <div *ngIf="accountToggle" class="hoverBox" (click)="toggleHoverBox()">
             <h4 style="color: #FF318E">My Account</h4>
             <p style="color: #969696">{{email}}</p>
 

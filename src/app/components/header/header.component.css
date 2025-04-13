@@ -50,7 +50,7 @@ nav.scrolled {
     text-decoration: none;
 }
 .navLinks a:hover{
-    color: #FF318E;
+    color: #F3265F;
     /* border-bottom: 2px solid #FF318E; */
 }
 .user{
@@ -113,7 +113,7 @@ nav.scrolled {
     display: block;
     position: absolute;
     width: 170px;
-    top: 70px;
+    top: 80px;
     height: 150px;
     right: 0px;
     border-top-left-radius: 5px;
