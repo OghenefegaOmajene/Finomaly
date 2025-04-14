@@ -6,9 +6,16 @@
   
         <section class="dashboardContent">
             <div class="totalTransactions">
-                <i class="bi bi-bank2" style="color: #6221f3; background-color: #6221f31c"></i>
-                <p>Total Transactions (Today)</p>
-                <p>1,200</p>
+                <h3>Total Transactions (Today)</h3>
+
+                <div class="totalTransactionsBox">
+                    <i class="bi bi-bank2" style="color: #6221f3; background-color: #6221f31c"></i>
+                    <div class="totalTransactionsTxt">
+                        <p>Number of transactions: 5</p>
+                        <p>Amount: $127,000</p>
+                    </div>
+                </div>
+                
             </div>
 
             <div class="anomalyOverview">
@@ -16,13 +23,18 @@
                 <div class="anomalyOverviewBox">
                     <div class="moderateAnomalies">
                         <i class="bi bi-exclamation-triangle-fill" style="color: orangered; background-color: #ffd2cf"></i>
-                        <p>Moderate Anomalies</p>
-                        <p>12</p>
+                        <div class="anomalyTxt">
+                            <h4>Moderate Anomalies</h4>
+                            <p>12</p>
+                        </div>
                     </div>
                     <div class="criticalAnomalies">
                         <i class="bi bi-shield-fill-exclamation" style="color: crimson; background-color: rgb(255, 211, 220);"></i>
-                        <p>Critical Anomalies</p>
-                        <p>5</p>
+                        
+                        <div class="anomalyTxt">
+                            <h4>Critical Anomalies</h4>
+                            <p>7</p>
+                        </div>
                     </div>
                     <button>Get More Insight</button>
                 </div>

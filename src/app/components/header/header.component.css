@@ -24,7 +24,7 @@ nav.scrolled {
     top: 5px;
     backdrop-filter: blur(40px);
     /* align-self: center; */
-    right: 50px;
+    right: 63px;
     /* margin-bottom: 80px; */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -104,7 +104,7 @@ nav.scrolled {
     height: 100%;
     border-radius: 50%;
     padding: 1px;
-    border: 3px solid #FF318E;
+    border: 3px solid #F3265F;
     /* animation: pulse 2s linear infinite; */
     cursor: pointer;
 }
@@ -173,9 +173,9 @@ nav.scrolled {
     justify-content: space-around;
 }
 .acctType{
-    color: #FF318E;
+    color: #F3265F;
     background-color: transparent;
-    background-color: #ffbcda;
+    background-color: #f3266038;
     /* border-radius: 30px; */
     /* padding: 10px; */
     cursor: pointer;
@@ -187,7 +187,7 @@ nav.scrolled {
 
 .bi{
     font-size: 17px;
-    color: #FF318E;
+    color: #F3265F;
 }
 
 
@@ -329,7 +329,7 @@ nav.scrolled {
       flex-direction: column;
       /* justify-content: center; */
       align-items: start;
-      width: 95%;
+      width: 91%;
       height: 300px;
       padding: 1rem;
       z-index: 1000;

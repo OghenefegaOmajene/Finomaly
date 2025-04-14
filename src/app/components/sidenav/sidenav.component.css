@@ -36,7 +36,7 @@
   .toggle-btn {
     background: none;
     border: none;
-    color: #FF318E;
+    color: #F3265F;
     float: right;
     font-size: 20px;
   }
@@ -86,7 +86,7 @@
   
   .sideNavLink:hover,
   .sideNavLink.active {
-    background-color: #FF318E;
+    background-color: #F3265F;
     border-radius: 4px;
     color: #fff;
   }
@@ -126,5 +126,5 @@
     color: #838383;
 }
 .bi-box-arrow-right:hover{
-    color: #FF318E;
+    color: #F3265F;
 }

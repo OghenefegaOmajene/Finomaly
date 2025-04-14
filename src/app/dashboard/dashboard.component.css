@@ -85,9 +85,9 @@
     box-shadow: 0px 0px 2px 1px #dadada;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    justify-content: space-evenly;
+    /* align-items: center; */
+    /* gap: 20px; */
+    /* justify-content: space-evenly; */
     padding: 10px;
     /* height: 80%; */
 }     
@@ -100,31 +100,6 @@
     padding: 10px;
     /* height: 80%; */
 } 
-.moderateAnomalies{
-    /* border: 1px solid black; */
-    background-color: white;
-    /* box-shadow: 0px 0px 2px 1px #ff89be; */
-    color: #838383;
-    width: 30%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.criticalAnomalies{
-    /* grid-area: 1 / 5 / 3 / 7; */
-    background-color: white;
-    /* border: 1px solid black; */
-    /* box-shadow: 0px 0px 2px 1px #ff89be; */
-    color: #838383;
-    width: 30%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 .riskScoreOverview{
     grid-area: 3 / 1 / 9 / 4;
     background-color: white;
@@ -151,8 +126,29 @@
     padding: 10px;
     border-radius: 10px;
 }
-.anomalyOverview h3, .monthlyTransactionsOverview h3{
+.anomalyOverview h3, .monthlyTransactionsOverview h3, .totalTransactions h3{
     color: black;
+}
+
+
+
+
+/* TOTAL TRANSACTIONS */
+.totalTransactionsBox{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    gap: 20px;
+}
+.totalTransactionsTxt{
+    /* background-color: #F3265F; */
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -166,11 +162,27 @@
     justify-content: space-around;
 }
 .anomalyOverviewBox button{
-    width: 100px;
+    /* width: 100px; */
     height: 60%;
-    background-color: #FF318E;
+    background-color: #F3265F;
     border: 0;
     color: white;
     border-radius: 10px;
     padding: 10px;
+}
+.moderateAnomalies, .criticalAnomalies{
+    /* grid-area: 1 / 5 / 3 / 7; */
+    background-color: white;
+    /* border: 1px solid black; */
+    /* box-shadow: 0px 0px 2px 1px #ff89be; */
+    color: #838383;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.anomalyTxt{
+    display: flex;
+    flex-direction: column;
 }
