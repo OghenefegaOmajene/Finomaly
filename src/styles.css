@@ -35,7 +35,7 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: black;
+    /* background-color: black; */
     /* background: linear-gradient(to bottom, #FF318E, #1a0028); */
     /* background: linear-gradient(to bottom, #FF318E, #1a0028);
     background-image: repeating-linear-gradient(

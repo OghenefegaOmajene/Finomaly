@@ -23,10 +23,17 @@ nav.scrolled {
     transition: 0.8s;
     top: 5px;
     backdrop-filter: blur(40px);
-    /* align-self: center; */
-    right: 63px;
+    left: 5%;
+    /* left: 10px; */
+    /* right: 60px; */
+    /* margin: 0 auto; */
+    align-self: center;
+    /* right: 63px; */
     /* margin-bottom: 80px; */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav.scrolled .navLinks{
+    width: 400px;
 }
 .navLogo{
     width: 200px;
@@ -51,10 +58,12 @@ nav.scrolled {
     justify-content: space-between;
     align-items: center;
 }
+
 .navLinks a{
     color: white;
     cursor: pointer;
     text-decoration: none;
+    font-size: 14px;
 }
 .navLinks a:hover{
     color: #F3265F;
@@ -80,7 +89,7 @@ nav.scrolled {
     border: 3px solid #F3265F;
     /* border-radius: 30px; */
     padding: 10px;
-    width: 80%;
+    width: 70%;
     height: 80%;
     /* width: 200px; */
     cursor: pointer;
@@ -255,44 +264,6 @@ nav.scrolled {
   .toggle.open {
     transform: rotate(180deg);
   }
-  /* #checkbox:checked + .toggle .bars {
-    position: absolute;
-    transition-duration: .5s;
-  }
-  
-  #checkbox:checked + .toggle #bar2 {
-    transform: scaleX(0);
-    transition-duration: .5s;
-  }
-  
-  #checkbox:checked + .toggle #bar1 {
-    width: 100%;
-    transform: rotate(45deg);
-    transition-duration: .5s;
-  }
-  
-  #checkbox:checked + .toggle #bar3 {
-    width: 100%;
-    transform: rotate(-45deg);
-    transition-duration: .5s;
-  }
-  
-  #checkbox:checked + .toggle {
-    transition-duration: .5s;
-    transform: rotate(180deg);
-  } */
-@media screen and (max-width: 1100px){
-    .navLinks a{
-        font-size: 14px;
-    }
-    .navLinks{
-        /* border: 1px solid black; */
-        width: 400px;
-    }
-    .logInBtn{
-        width: 70%;
-    }
-}
 
 /* Default hidden for small screens */
 @media screen and (max-width: 1066px) {
@@ -329,7 +300,7 @@ nav.scrolled {
       flex-direction: column;
       /* justify-content: center; */
       align-items: start;
-      width: 91%;
+      width: 96%;
       height: 300px;
       padding: 1rem;
       z-index: 1000;
@@ -337,7 +308,10 @@ nav.scrolled {
       /* gap: 50px; */
       text-align: center;
     }
-    
+    nav.scrolled .navLinks{
+        width: 95%;
+        /* margin-right: 10px; */
+    }
     /* .navLinks a{
         color: white;
     } */
@@ -377,7 +351,8 @@ nav.scrolled {
         align-self: center;
     }
     nav.scrolled{
-        right: 20px;
+        /* align-self: center; */
+        /* right: 20px; */
         height: 60px;
     }
     /* nav.scrolled .logInBtn{
@@ -386,40 +361,25 @@ nav.scrolled {
   }
   
 
-  
-
-/* @media screen and (max-width: 750px){
-    nav{
-        border: 1px solid white;
-        display: flex;
-        align-items: center;
-    }
-    .navLinks {
-        display: none;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: white;
-        flex-direction: column;
-        width: 100%;
-        padding: 1rem;
-        border: 1px solid #ccc;
-      }
-    
-      .navLinks.active {
-        display: flex;
-      }
-    
-      .toggle {
-        display: flex;
-        border: 1px solid white;
-        
-      }
-    .logInBtn{
-        color: white;
-    }
-    nav.scrolled .logInBtn{
-        color: black;
+@media screen and (max-width: 701px){
+    nav.scrolled .navLinks{
+        width: 94%;
+        /* margin-right: 10px; */
     }
 }
- */
+
+@media screen and (max-width: 569px){
+    nav.scrolled .navLinks{
+        width: 93%;
+        /* margin-right: 10px; */
+    }
+}
+
+@media screen and (max-width: 490px){
+    nav.scrolled .navLinks{
+        width: 91%;
+        /* margin-right: 10px; */
+    }
+}
+
+/*  */
