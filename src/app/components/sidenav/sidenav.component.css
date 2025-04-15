@@ -8,7 +8,7 @@
     border-right: 1px solid #ccc;
     left: 0;
     /* bottom: 0; */
-    /* position: fixed; */
+    /* position: relative; */
     /* padding: 1rem; */
     transition: width 0.3s ease;
     display: flex;

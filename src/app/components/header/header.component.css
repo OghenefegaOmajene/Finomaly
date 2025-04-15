@@ -1,16 +1,25 @@
+.navBox{
+    width: 100%;
+    height: 80px;
+    /* background-color: rgba(245, 245, 245, 0.265); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    z-index: 100;
+    position: fixed;
+}
 nav{
     width: 100%;
     height: 80px;
     /* background-color: transparent; */
-    /* background-color: rgb(255, 255, 255); */
+    /* background-color: rgba(255, 255, 255, 0.146); */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     top: 0px;
     position: fixed;
     z-index: 100;
-
-
 }
 nav {
     transition: background-color 0.4s ease;
@@ -23,15 +32,11 @@ nav.scrolled {
     transition: 0.8s;
     top: 5px;
     backdrop-filter: blur(40px);
-    left: 5%;
-    /* left: 10px; */
-    /* right: 60px; */
-    /* margin: 0 auto; */
-    align-self: center;
-    /* right: 63px; */
-    /* margin-bottom: 80px; */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+/* nav.scrolled .navBox{
+    top: 5px;
+} */
 nav.scrolled .navLinks{
     width: 400px;
 }

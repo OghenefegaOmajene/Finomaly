@@ -47,6 +47,7 @@ import { DashboardLayoutComponent } from './dashboard-layout/dashboard-layout.co
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { TransactionsComponent } from './transactions/transactions.component';
 
 export const routes: Routes = [
   {
@@ -65,7 +66,8 @@ export const routes: Routes = [
     path: 'dashboard',
     component: DashboardLayoutComponent,
     children: [
-      { path: '', component: DashboardComponent }
+      { path: '', component: DashboardComponent },
+      { path: 'transactions', component: TransactionsComponent }
       // You can add nested routes like:
       // { path: 'settings', component: SettingsComponent }
     ]

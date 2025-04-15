@@ -81,6 +81,10 @@
     }
     .footerLogo, .socials{
         height: 20%;
+        /* border: 1px solid white; */
+    }
+    .footerLogo{
+        width: 100px;
     }
     .footerLinks{
         width: 70%;
@@ -107,9 +111,10 @@
     }
     .footerLogo{
         align-items: center;
+        width: 200px;
     }
     .footerLogo img{
-        height: 60%;
+        height: 100%;
     }
 }
 @media screen and (max-width: 400px) {

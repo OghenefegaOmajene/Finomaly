@@ -1,58 +1,60 @@
-<nav [ngClass]="{ 'scrolled': isScrolled }">
-    <div class="navLogo">
-        <img src="zaiganLogo.png" alt="">
-    </div>
-
-    <div class="navLinks" [class.active]="menuToggle">
-        <a routerLink="/home" fragment="home">Home</a>
-        <a routerLink="/home" fragment="howItWorks">How It Works</a>
-        <a routerLink="/home" fragment="whyUs">Why Us?</a>
-        <a routerLink="/home" fragment="reviews">Reviews</a>
-        <a routerLink="/home" fragment="pricing">Pricing</a>
-
-        <button class="logInBtn" id="logInBtnNavLinks">Log In</button>
-    </div>
-      
-    <!-- <div class="menu-toggle" (click)="toggleMenu()">
-        <input type="checkbox" id="checkbox" [checked]="menuToggle" readonly />
-        <label for="checkbox" class="toggle">
-          <div class="bars" id="bar1"></div>
-          <div class="bars" id="bar2"></div>
-          <div class="bars" id="bar3"></div>
-        </label>
-    </div> -->
-
-    <div class="user">
-    
-        <button class="logInBtn" id="logInBtn" (click)="toggleHoverBox()">Log In</button>
-        <!-- <i class="bi bi-person" (click)="toggleHoverBox()"></i> -->
-        <!-- <img src="coolChibi.jpg" alt="" class="userImg"> -->
-        <div *ngIf="accountToggle" class="hoverBox" (click)="toggleHoverBox()">
-            <h4 style="color: #F3265F">My Account</h4>
-            <p style="color: #969696">{{email}}</p>
-
-            <div class="acctControls">
-                <button class="acctType">Personal</button>
-                <a routerLink="/dashboard" class="acctLinks">
-                    <i class="bi bi-columns-gap"></i>
-                    Dashboard
-                </a>
-  
-                <p class="acctLinks"> 
-                    <i class="bi bi-box-arrow-right"></i>
-                    <!-- <fa-icon [icon]="faLogOut" style="color: #FF318E"></fa-icon> -->
-                    Log out
-                </p>
-            </div>
-            
+<div class="navBox">
+    <nav [ngClass]="{ 'scrolled': isScrolled }">
+        <div class="navLogo">
+            <img src="zaiganLogo.png" alt="">
         </div>
-
-        <div class="menu-toggle" (click)="toggleMenu()">
-            <div class="toggle" [ngClass]="{ 'open': menuToggle }">
+    
+        <div class="navLinks" [class.active]="menuToggle">
+            <a routerLink="/home" fragment="home">Home</a>
+            <a routerLink="/home" fragment="howItWorks">How It Works</a>
+            <a routerLink="/home" fragment="whyUs">Why Us?</a>
+            <a routerLink="/home" fragment="reviews">Reviews</a>
+            <a routerLink="/home" fragment="pricing">Pricing</a>
+    
+            <button class="logInBtn" id="logInBtnNavLinks">Log In</button>
+        </div>
+          
+        <!-- <div class="menu-toggle" (click)="toggleMenu()">
+            <input type="checkbox" id="checkbox" [checked]="menuToggle" readonly />
+            <label for="checkbox" class="toggle">
               <div class="bars" id="bar1"></div>
               <div class="bars" id="bar2"></div>
               <div class="bars" id="bar3"></div>
+            </label>
+        </div> -->
+    
+        <div class="user">
+        
+            <button class="logInBtn" id="logInBtn" (click)="toggleHoverBox()">Log In</button>
+            <!-- <i class="bi bi-person" (click)="toggleHoverBox()"></i> -->
+            <!-- <img src="coolChibi.jpg" alt="" class="userImg"> -->
+            <div *ngIf="accountToggle" class="hoverBox" (click)="toggleHoverBox()">
+                <h4 style="color: #F3265F">My Account</h4>
+                <p style="color: #969696">{{email}}</p>
+    
+                <div class="acctControls">
+                    <button class="acctType">Personal</button>
+                    <a routerLink="/dashboard" class="acctLinks">
+                        <i class="bi bi-columns-gap"></i>
+                        Dashboard
+                    </a>
+      
+                    <p class="acctLinks"> 
+                        <i class="bi bi-box-arrow-right"></i>
+                        <!-- <fa-icon [icon]="faLogOut" style="color: #FF318E"></fa-icon> -->
+                        Log out
+                    </p>
+                </div>
+                
+            </div>
+    
+            <div class="menu-toggle" (click)="toggleMenu()">
+                <div class="toggle" [ngClass]="{ 'open': menuToggle }">
+                  <div class="bars" id="bar1"></div>
+                  <div class="bars" id="bar2"></div>
+                  <div class="bars" id="bar3"></div>
+                </div>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
+</div>
