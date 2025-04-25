@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { SidenavComponent } from "../components/sidenav/sidenav.component";
-import { SidenavheaderComponent } from '../components/sidenavheader/sidenavheader.component';
+import { SidenavComponent } from "../../components/sidenav/sidenav.component";
+import { SidenavheaderComponent } from '../../components/sidenavheader/sidenavheader.component';
 
 @Component({
   selector: 'app-dashboard',

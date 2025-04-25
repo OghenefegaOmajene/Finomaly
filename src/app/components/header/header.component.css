@@ -42,7 +42,7 @@ nav.scrolled .navLinks{
 }
 .navLogo{
     width: 200px;
-    height: 70%;
+    height: 40%;
     /* border: 1px solid black; */
     display: flex;
     justify-content: end;
@@ -103,6 +103,7 @@ nav.scrolled .navLinks{
 }
 .logInBtn:hover{
     background-color: #F3265F;
+    /* background-color: #8122FF; */
     color: white;
     transition: 1s;
 }

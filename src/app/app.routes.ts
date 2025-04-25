@@ -1,53 +1,12 @@
-// import { Routes } from '@angular/router';
-// import { HomeComponent } from './home/home.component';
-// import { NotFoundComponent } from './components/not-found/not-found.component';
-// import { DashboardComponent } from './dashboard/dashboard.component';
-
-// export const routes: Routes = [
-//     {
-//         path: '',
-//         redirectTo: 'home',
-//         pathMatch: 'full',
-//     },
-//     {
-//         path: 'home',
-//         component: HomeComponent
-//     },
-//     {
-//         path: 'howItWorks',
-//         component: HomeComponent
-//     },
-//     {
-//         path: 'whyUs',
-//         component: HomeComponent
-//     },
-//     {
-//         path: 'reviews',
-//         component: HomeComponent
-//     },
-//     {
-//         path: 'pricing',
-//         component: HomeComponent
-//     },
-//     {
-//         path: 'dashboard',
-//         component: DashboardComponent
-//     },
-//     {
-//         path: '**',
-//         component: NotFoundComponent
-//     }
-
-// ];
-
 
 import { Routes } from '@angular/router';
-import { MainLayoutComponent } from './main-layout/main-layout.component';
-import { DashboardLayoutComponent } from './dashboard-layout/dashboard-layout.component';
-import { HomeComponent } from './home/home.component';
-import { NotFoundComponent } from './components/not-found/not-found.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { TransactionsComponent } from './transactions/transactions.component';
+import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
+import { DashboardLayoutComponent } from './layout/dashboard-layout/dashboard-layout.component';
+import { HomeComponent } from './pages/home/home.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { TransactionsComponent } from './pages/transactions/transactions.component';
+import { LoginComponent } from './pages/login/login.component';
 
 export const routes: Routes = [
   {
@@ -71,6 +30,10 @@ export const routes: Routes = [
       // You can add nested routes like:
       // { path: 'settings', component: SettingsComponent }
     ]
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   },
   {
     path: '**',

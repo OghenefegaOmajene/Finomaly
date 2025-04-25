@@ -49,6 +49,9 @@ body{
       width: 400px;
       height: 400px;
       content: '';
+      /* background-image: linear-gradient(
+        to right, #23b9d0, #43b6b2
+      ); */
       background-image: linear-gradient(
         to right, #d02e23, #7a43b6
       );
