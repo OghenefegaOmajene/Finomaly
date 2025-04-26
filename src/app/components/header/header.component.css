@@ -28,7 +28,8 @@ nav {
 nav.scrolled {
     background-color: rgba(66, 66, 66, 0.167);
     width: 90%;
-    border-radius: 30px;
+    /* border-radius: 30px; */
+    border-radius: 7px;
     transition: 0.8s;
     top: 5px;
     backdrop-filter: blur(40px);
@@ -65,7 +66,7 @@ nav.scrolled .navLinks{
 }
 
 .navLinks a{
-    color: white;
+    color: rgb(0, 0, 0);
     cursor: pointer;
     text-decoration: none;
     font-size: 14px;
@@ -85,6 +86,10 @@ nav.scrolled .navLinks{
     align-items: center;
     /* justify-content: center; */
 }
+.loginbtnlink{
+    width: 70%;
+    height: 80%;
+}
 .logInBtn{
     /* background-color: black; */
     /* color: #FF318E; */
@@ -94,17 +99,18 @@ nav.scrolled .navLinks{
     border: 3px solid #F3265F;
     /* border-radius: 30px; */
     padding: 10px;
-    width: 70%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
     /* width: 200px; */
     cursor: pointer;
     font-size: 15px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .logInBtn:hover{
     background-color: #F3265F;
     /* background-color: #8122FF; */
-    color: white;
+    color: rgb(255, 255, 255);
     transition: 1s;
 }
 .bi-person{

@@ -30,14 +30,15 @@
 }
 .getStarted{
     background-color: transparent;
-    color: white;
-    border: 3px solid #F3265F;
+    color: rgb(0, 0, 0);
+    border: 2px solid #F3265F;
     padding: 15px;
     /* height: 50px; */
     width: 200px;
     animation: pulse 2s linear infinite;
     cursor: pointer;
     font-size: 15px;
+    border-radius: 7px;
 }
 @keyframes pulse{
     0%{
@@ -52,6 +53,7 @@
 }
 .getStarted:hover{
     background-color: #F3265F;
+    color: white;
     transition: 1s;
 }
 #heroTxt{
@@ -67,7 +69,7 @@
     border-image: linear-gradient(to bottom, #F3265F, #910e33, #470014) 1; */
 }
 #heroTxt h1, #heroTxt p{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 #heroTxt h1{
     font-size: 38px;
@@ -107,7 +109,7 @@
     /* margin-bottom: 100px; */
 }
 .keyFeatures h1{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .keyFeaturesBody{
     width: 80%;
@@ -119,7 +121,7 @@
 .keyFeaturesBody div{
     width: 25%;
     height: 100%;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: start;
     display: flex;
     flex-direction: column;
@@ -128,7 +130,8 @@
     padding-left: 15px;
     padding-right: 15px;
     justify-content: center;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    border-radius: 7px;
     /* border: 1px solid black; */
     /* box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.221); */
     background-color: rgba(78, 78, 78, 0.301);
@@ -174,7 +177,7 @@ fa-icon{
     align-items: center;
 }
 .howItWorksHead h1{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .howitworksimg{
     width: 100px;
@@ -201,7 +204,7 @@ fa-icon{
     width: 45%;
     height: 100%;
     /* border: 1px solid orangered; */
-    color: white;
+    color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -214,7 +217,8 @@ fa-icon{
 .step1Img img{
     width: 100%;
     height: 100%;
-    border-radius: 30px;
+    /* border-radius: 30px; */
+    border-radius: 7px;
 }
 .step2{
     width: 100%;
@@ -227,7 +231,7 @@ fa-icon{
     width: 40%;
     height: 100%;
     /* border: 1px solid orangered; */
-    color: white;
+    color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -240,7 +244,8 @@ fa-icon{
 .step2Img img{
     width: 100%;
     height: 100%;
-    border-radius: 30px;
+    border-radius: 7px;
+    /* border-radius: 30px; */
 }
 
 
@@ -257,7 +262,7 @@ fa-icon{
     margin-bottom: 100px;
 }
 .whyUs h1{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .whyUsBody{
     width: 80%;

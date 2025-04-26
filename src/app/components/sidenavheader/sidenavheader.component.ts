@@ -1,8 +1,9 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-sidenavheader',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './sidenavheader.component.html',
   styleUrl: './sidenavheader.component.css'
 })

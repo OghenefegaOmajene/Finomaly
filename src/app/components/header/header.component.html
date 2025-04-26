@@ -11,7 +11,7 @@
             <a routerLink="/home" fragment="reviews">Reviews</a>
             <a routerLink="/home" fragment="pricing">Pricing</a>
     
-            <button class="logInBtn" id="logInBtnNavLinks">Log In</button>
+            <!-- <button class="logInBtn" id="logInBtnNavLinks">Log In</button> -->
         </div>
           
         <!-- <div class="menu-toggle" (click)="toggleMenu()">
@@ -25,7 +25,11 @@
     
         <div class="user">
         
-            <button class="logInBtn" id="logInBtn" (click)="toggleHoverBox()">Log In</button>
+            <a routerLink="/login" class="loginbtnlink">
+                <button class="logInBtn" id="logInBtn">Log In</button>
+            </a>
+            
+            <!-- <button class="logInBtn" id="logInBtn" (click)="toggleHoverBox()">Log In</button> -->
             <!-- <i class="bi bi-person" (click)="toggleHoverBox()"></i> -->
             <!-- <img src="coolChibi.jpg" alt="" class="userImg"> -->
             <div *ngIf="accountToggle" class="hoverBox" (click)="toggleHoverBox()">
