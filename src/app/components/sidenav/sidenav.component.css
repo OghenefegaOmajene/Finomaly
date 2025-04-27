@@ -4,12 +4,15 @@
     /* flex-grow: 1; */
     height: 100vh;
     /* background-color: rgb(45, 0, 26); */
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
+    background-color: rgb(0, 0, 0);
     border-right: 1px solid #ccc;
     left: 0;
     /* bottom: 0; */
-    /* position: relative; */
+    /* z-index: 10000; */
+    position: fixed;
     /* padding: 1rem; */
+    
     transition: width 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -74,6 +77,7 @@
   }
   .sideNavLink {
     color: #838383;
+    color: white;
     display: flex;
     align-items: center;
     gap: 12px;

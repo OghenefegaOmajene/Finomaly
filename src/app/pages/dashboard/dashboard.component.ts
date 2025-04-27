@@ -10,7 +10,7 @@ import { SidenavheaderComponent } from '../../components/sidenavheader/sidenavhe
   styleUrl: './dashboard.component.css'
 })
 export class DashboardComponent {
-  isCollapsed = true;
+  isCollapsed = false;
 
   toggleSidenav() {
     this.isCollapsed = !this.isCollapsed;
