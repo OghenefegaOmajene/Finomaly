@@ -24,7 +24,7 @@
     padding-left: 2rem;
   } */
 .dashboardContentBox{
-    width: 100% !important;
+    /* width: 100% !important; */
     position: relative;
     /* width: 300px; */
     flex-grow: 1;
