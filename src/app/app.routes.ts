@@ -26,7 +26,9 @@ export const routes: Routes = [
     path: 'dashboard',
     component: DashboardLayoutComponent,
     children: [
-      { path: '', component: DashboardComponent },
+      { path: '', redirectTo: 'overview', pathMatch: 'full' },
+      { path: 'overview', component: DashboardComponent },
+      // { path: '', component: DashboardComponent },
       { path: 'transactions', component: TransactionsComponent }
       // You can add nested routes like:
       // { path: 'settings', component: SettingsComponent }

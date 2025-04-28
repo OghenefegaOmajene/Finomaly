@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SidenavComponent } from "../../components/sidenav/sidenav.component";
 // import anya from 'anya.jpg'
 // import Adam from 'Adam.jpg'
 // import chibi from 'chibi.jpg'
@@ -6,12 +7,17 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-transactions',
-  imports: [],
+  imports: [SidenavComponent],
   templateUrl: './transactions.component.html',
   styleUrl: './transactions.component.css'
 })
 export class TransactionsComponent {
-  // const transactions = [
+  isCollapsed = false;
+
+  toggleSidenav() {
+    this.isCollapsed = !this.isCollapsed;
+  }
+  // transactions = [
   //   {
   //     id: 1,
   //     name: "Emma Ryan Jr.",

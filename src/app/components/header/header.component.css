@@ -29,7 +29,7 @@ nav.scrolled {
     background-color: rgba(66, 66, 66, 0.167);
     width: 90%;
     /* border-radius: 30px; */
-    border-radius: 7px;
+    border-radius: 50px;
     transition: 0.8s;
     top: 5px;
     backdrop-filter: blur(40px);

@@ -1,4 +1,51 @@
 <!-- <div className="transactions-container">
+
+  <div className="transactionsHead">
+    <h2 className='h2'>Transactions</h2>
+    <input type="text" placeholder="Search" />
+  </div>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>USER</th>
+        <th>TYPE</th>
+        <th>STATUS</th>
+        <th>DATE</th>
+        <th>AMOUNT</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {transactions.map((transaction) => (
+        <tr key={transaction.id}>
+          <td className="receiver">
+            <input type="checkbox" />
+            <img src={transaction.img} alt={transaction.name} />
+            <span>{transaction.name}</span>
+          </td>
+          <td>{transaction.type}</td>
+          <td>
+            <span className={`status ${transaction.status.toLowerCase()}`}>
+              {transaction.status}
+            </span>
+          </td>
+          <td>{transaction.date}</td>
+          <td className="amount11">{transaction.amount}</td>
+          <td>
+            <button className="details-btn">Details</button>
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div> -->
+
+
+
+
+<app-sidenav [isCollapsed]="isCollapsed"></app-sidenav>
+  <div className="transactions-container">
     <div className="transactionsHead">
       <h2 className='h2'>Transactions</h2>
       <input type="text" placeholder="Search" />
@@ -15,26 +62,31 @@
         </tr>
       </thead>
       <tbody>
-        {transactions.map((transaction) => (
+        <!-- {transactions.map((transaction) => ( -->
           <tr key={transaction.id}>
             <td className="receiver">
               <input type="checkbox" />
-              <img src={transaction.img} alt={transaction.name} />
-              <span>{transaction.name}</span>
+              <!-- <img src="anya.jpg" alt="" /> -->
+              <span>Anya Forger</span>
             </td>
-            <td>{transaction.type}</td>
+            <td></td>
             <td>
-              <span className={`status ${transaction.status.toLowerCase()}`}>
-                {transaction.status}
+              <span>
+                Approved
               </span>
             </td>
-            <td>{transaction.date}</td>
-            <td className="amount11">{transaction.amount}</td>
+            <td>28-04-25</td>
+            <td className="amount11">13,000</td>
             <td>
               <button className="details-btn">Details</button>
             </td>
           </tr>
-        ))}
+        <!-- ))} -->
       </tbody>
     </table>
-  </div> -->
+  </div>
+
+
+
+
+<!-- </div> -->
