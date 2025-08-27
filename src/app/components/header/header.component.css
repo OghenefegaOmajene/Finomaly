@@ -42,9 +42,9 @@ nav.scrolled .navLinks{
     width: 400px;
 }
 .navLogo{
-    width: 200px;
-    height: 40%;
-    /* border: 1px solid black; */
+    width: 100px;
+    height: 100%;
+    border: 1px solid black; 
     display: flex;
     justify-content: end;
     align-items: center;
@@ -94,8 +94,8 @@ nav.scrolled .navLinks{
     /* background-color: black; */
     /* color: #FF318E; */
     border: 0;
-    /* border-radius: 30px; */
-    background-color: #F3265F;
+    background: #2C0F3E;
+background: linear-gradient(167deg, rgba(44, 15, 62, 1) 0%, rgba(108, 26, 110, 1) 50%, rgba(155, 47, 134, 1) 100%);
     /* border: 3px solid #F3265F; */
     /* border-radius: 30px; */
     padding: 10px;
